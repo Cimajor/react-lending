@@ -3,16 +3,51 @@ import StudySlider from '../components/StudySlider';
 import SeoTitle from '../components/Title/SeoTitle';
 import Testimonial from '../components/Testimonial/Testimonial';
 import Fade from 'react-reveal/Fade'
+import emailjs from '@emailjs/browser';
 
 const Subscribe = (props) => {
-        let [isButtonActive, setIsButtonActive] = useState(true)
         let [questionTest, setQuestionText] = useState("")
         let [email, setQuestionEmail] = useState("")
 
-        const checkData = () => {
-            if(email.lengtj === 0 || questionTest=== 0){
-                setIsButtonActive(false)
-            }
+        const sendQuestion = (event) => {
+            event.preventDefault();
+            const contactParams = {
+                form_name: "Contacted",
+                form_email: email,
+                message: questionTest
+            };
+
+        //     const data = {
+        //         service_id: 'service_avdjfsf',
+        //         template_id: 'template_grvit3i',
+        //         user_id: 'user_HS7JdFxlVNng9yo2PCzKq',
+        //         template_params: contactParams
+        //     }
+
+        //     fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Accept': 'application/json',
+        //         'Authorization': 'Bearer 1d90c0519421dc5eee2e1c539e9b5b0c',
+        //     },
+        //     body: JSON.stringify(data)
+        // })        
+        // .then((result) => {
+        //     console.log(result.statusText);
+        // }, (error) => {
+        //     console.log(error.statusText);
+        // });
+        
+
+        // event.target.reset();
+
+            emailjs.send('service_avdjfsf','template_grvit3i', contactParams, "user_HS7JdFxlVNng9yo2PCzKq")
+	            .then((response) => {
+	            console.log('SUCCESS!', response.status, response.text);
+	        }, (err) => {
+	            console.log('FAILED...', err);
+	        });
         }
 
         let FooterData = props.FooterData;
@@ -23,9 +58,9 @@ const Subscribe = (props) => {
                     <div className="cloud_img"><img src={require('../img/seo/cloud.png')} alt=""/></div>
                     <div className="container">
                         <SeoTitle Title="Contact Us" TitleP="Please leave your contacts us, and we will contact you back as fast as possible"/>
-                        <form action="#" className="row seo_subscribe_form">
+                        <form action="#" onSubmit={sendQuestion} className="row seo_subscribe_form">
                             <div className="input-group col-lg-5 col-md-5 col-sm-6">
-                                <input type="url" onChange={evt => setQuestionText(evt.target.value)} name="website" id="website" placeholder="Question" className="form-control"/>
+                                <input type="text" onChange={evt => setQuestionText(evt.target.value)} name="website" id="website" placeholder="Question" className="form-control"/>
                             </div>
                             <div className="input-group col-lg-5 col-md-4 col-sm-6">
                                 <input type="email" onChange={evt => setQuestionEmail(evt.target.value)} name="email" id="emails" placeholder="Email" className="form-control"/>
@@ -42,7 +77,7 @@ const Subscribe = (props) => {
                         <StudySlider/>
                     </div>
                 </section>
-                <section className="seo_fact_area sec_pad">
+                {/* <section className="seo_fact_area sec_pad">
                     <div className="home_bubble">
                         <div className="bubble b_one"></div>
                         <div className="bubble b_three"></div>
@@ -79,46 +114,8 @@ const Subscribe = (props) => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <Testimonial tClass="testimonial_area sec_pad" FooterData={FooterData}/>
-                <section className="seo_partner_logo_area sec_pad">
-                    <div className="container">
-                        <div className="seo_sec_title text-center mb_70">
-                            <Fade bottom><h2>Relied on marketers, trusted by engineers,<br/> and beloved by executives, everyw here.</h2></Fade>
-                        </div>
-                        <div className="partner_logo_area_four">
-                            <div className="row partner_info">
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_01.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_02.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_03.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_04.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_05.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_06.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_07.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_08.png')} alt=""/></a>
-                                </div>
-                                <div className="logo_item">
-                                    <a href=".#"><img src={require('../img/seo/logo_09.png')} alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section className="seo_call_to_action_area sec_pad">
                     <div className="container">
                         <div className="seo_call_action_text">

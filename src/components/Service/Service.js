@@ -138,6 +138,41 @@ will help you shape your skills for training</h2>
                     </div>
                 </div>
             </section>
+            <section className="seo_features_one sec_pad">
+                <div className="container">
+                    <div className="row flex-row-reverse">
+                        <div className="col-lg-6">
+                            <div className="seo_features_img">
+                                {/* <div className="round_circle"></div>
+                                <div className="round_circle two"></div> */}
+                                <img src={require('../../img/online_edu.png')} alt=""/>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <Fade bottom cascade>
+                                <div className="seo_features_content">
+                                    <h2>Schooless will help you to find the best way to learn needed skills</h2>
+                                    <p>User can find the most suitable way to explore needed skills</p>
+                                    <div className="media seo_features_item">
+                                        <div className="icon"><img src={require('../../img/seo/icon4.png')} alt=""/></div>
+                                        <div className="media-body">
+                                            <h3>All education sources splited by types</h3>
+                                            <p>User is able to find the most sutable way to learn skill. It can be book, online course or ofline lessons in your regein.</p>
+                                        </div>
+                                    </div>
+                                    <div className="media seo_features_item">
+                                        <div className="icon two"><img src={require('../../img/seo/icon3.png')} alt=""/></div>
+                                        <div className="media-body">
+                                            <h3>All courses will have list of covered skill</h3>
+                                            <p>User can select best source of education wich perfectly cover only needed skills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </React.Fragment>
     )
 }
