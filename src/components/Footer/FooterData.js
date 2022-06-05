@@ -163,14 +163,14 @@ const FooterData = {
       {
         id: 1,
         image: "new/member_01.jpg",
-        description: "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
-        authorName: "Phillip Anthropy",
-        authorPost: "UI/UX designer", 
+        description: "My Father works in the Printing Industry for a 20 years. Unfortunately, this Industry is dying and he can lose his job in a few years. But he knows Photoshop, Illustrator, Graphic design. So My application will be able to find professional nodes with the most common skills list and shows what else he needs to learn to switch.",
+        authorName: "Olexandr Milevskyi",
+        authorPost: "Printing Industry", 
       },
       {
         id: 2,
         image: "new/member_01.jpg",
-        description: "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
+        description: "Ukrain Refugies",
         authorName: "Phillip Anthropy",
         authorPost: "UI/UX designer", 
       },
