@@ -17,37 +17,38 @@ const Subscribe = (props) => {
                 message: questionTest
             };
 
-        //     const data = {
-        //         service_id: 'service_avdjfsf',
-        //         template_id: 'template_grvit3i',
-        //         user_id: 'user_HS7JdFxlVNng9yo2PCzKq',
-        //         template_params: contactParams
-        //     }
+            const data = {
+                service_id: 'service_avdjfsf',
+                template_id: 'template_grvit3i',
+                user_id: 'user_HS7JdFxlVNng9yo2PCzKq',
+                template_params: contactParams,
+                accessToken: '1d90c0519421dc5eee2e1c539e9b5b0c'
+            }
 
-        //     fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //         'Accept': 'application/json',
-        //         'Authorization': 'Bearer 1d90c0519421dc5eee2e1c539e9b5b0c',
-        //     },
-        //     body: JSON.stringify(data)
-        // })        
-        // .then((result) => {
-        //     console.log(result.statusText);
-        // }, (error) => {
-        //     console.log(error.statusText);
-        // });
+            fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': 'Bearer 1d90c0519421dc5eee2e1c539e9b5b0c',
+            },
+            body: JSON.stringify(data)
+        })        
+        .then((result) => {
+            console.log(result.statusText);
+        }, (error) => {
+            console.log(error.statusText);
+        });
         
 
         // event.target.reset();
 
-            emailjs.send('service_avdjfsf','template_grvit3i', contactParams, "user_HS7JdFxlVNng9yo2PCzKq")
-	            .then((response) => {
-	            console.log('SUCCESS!', response.status, response.text);
-	        }, (err) => {
-	            console.log('FAILED...', err);
-	        });
+            // emailjs.send('service_avdjfsf','template_grvit3i', 'user_HS7JdFxlVNng9yo2PCzKq', contactParams, '1d90c0519421dc5eee2e1c539e9b5b0c')
+	        //     .then((response) => {
+	        //     console.log('SUCCESS!', response.status, response.text);
+	        // }, (err) => {
+	        //     console.log('FAILED...', err);
+	        // });
         }
 
         let FooterData = props.FooterData;

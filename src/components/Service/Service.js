@@ -64,31 +64,28 @@ const Service = () => {
                         <div className="col-lg-6">
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
-                                    <h2>Artificial Intelligence
-will help you shape your skills for training</h2>
+                                    <h2>Artificial Intelligence will help you shape your skills to achive your goals</h2>
                                     <p>With AI, we Analyze thousands of open profiles working in your industry and generate nodes of usefull skills to learn</p>
                                     <h4>Such structure will let you:</h4>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/seo/icon4.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Quickly enter to another profession</h3>
-                                            <p>See skills you need to learn to progress in your work</p>
+                                            <h3>Quickly enter to any profession</h3>
+                                            <p>You will be able to see necessary skills in chosen profession</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon two"><img src={require('../../img/seo/icon3.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Skills you need to lear to grow up</h3>
-                                            <p>You will be able to see needed skills or skills become popular in your profession</p>
+                                            <h3>Skills you need to learn to grow up</h3>
+                                            <p>Find out skills help you to progress in your work</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon three"><img src={require('../../img/seo/icon2.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>Quick switch to another profession with better conditions</h3>
-                                            <p>See which professions require a similar set of skills, and which of these professions offers a higher salary</p>
-
-                                            
+                                            <p>Explore which professions require a similar set of skills you have, and which of these professions are most interesting for you.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -110,13 +107,14 @@ will help you shape your skills for training</h2>
                         <div className="col-lg-6 d-flex align-items-center">
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
-                                    <h2 className="wow fadeInUp">Our Dashboard will help you quickly find all needed information about interested profetion</h2>
+                                    <h2 className="wow fadeInUp">Check out our dashboard to find all information about your dream job</h2>
                                     {/* <h6 className="wow fadeInUp">Based on anilized open data from different resources we are going to centralize all professional markets related information in one place:</h6> */}
-                                    <p className="wow fadeInUp">Based on anilized open data from different resources we are going to centralize all professional markets related information in one place:</p>
+                                    <p className="wow fadeInUp">We collect and analyze all related information about professional markets in one place</p>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/pos/icon2.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Is a profession needed on the market</h3>
+                                            <h3>Is profession in high demand?</h3>
+                                            <p>Check the trends and demand in the global career market</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
