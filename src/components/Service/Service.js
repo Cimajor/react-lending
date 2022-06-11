@@ -1,11 +1,12 @@
 import React from 'react';
 import SeoTitle from '../Title/SeoTitle';
 import Fade from 'react-reveal/Fade';
+import Mailchimp from 'react-mailchimp-form'
 
 const Service = () => {
     return(
         <React.Fragment>
-            <section className="seo_service_area sec_pad">
+            <section id="inspiration" className="seo_service_area sec_pad">
                 <div className="container">
                     <SeoTitle Title='The Goal' TitleP='Using open data and AI, schoolless analyzes all industries. It helps many people develop a new skill set to learn a new profession or grow in their current job, by suggesting the right skills to learn or develop. I will save valuable time thanks to a dedicated, tailor-made learning plan, so that you will never learn a skill that you will not use in your job!'/>
                     <div className="row seo_service_info">
@@ -50,6 +51,22 @@ const Service = () => {
                         </div> */}
                     </div>
                 </div>
+                {/* <div className='blur'/>
+                <div className='modal-container'>
+                <div className='subscribe-popup'>
+                <Mailchimp
+                    action="https://gmail.us17.list-manage.com/subscribe/post?u=9008ba6ddb844a5084f6e1d7e&amp;id=29ad4515c9"
+                    fields={[
+                    {
+                        name: 'EMAIL',
+                        placeholder: 'Email',
+                        type: 'email',
+                        required: true
+                    }
+                ]}
+                />  
+                </div>
+            </div> */}
             </section>
             <section className="seo_features_one sec_pad">
                 <div className="container">

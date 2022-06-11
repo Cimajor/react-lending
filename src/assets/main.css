@@ -25212,6 +25212,42 @@ a .h_head:hover {
   display: none;
 }
 
+.subscription-form input{
+  border: 1px solid #e2e2eb;
+  border-radius: 4px;
+  height: 55px;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 55px;
+  padding-left: 30px;
+  -webkit-appearance: none;
+  outline: none;
+  display: block;
+  width: 100%;
+}
+
+.subscription-form button{
+  border-width: 1px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+    font: 500 14px/47px "Poppins", sans-serif;
+    border: 2px solid #ccc5fa;
+    border-radius: 4px;
+    padding: 0px 23px;
+    transform: perspective(1px) translateZ(0);
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+
 /*============= chat_clients_area css ===========*/
 
 

@@ -31,10 +31,10 @@ class CustomNavbar extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className={`navbar-nav menu ml-auto ${nClass}`}>
                                 <li className="nav-item dropdown submenu mega_menu mega_menu_two">
-                                    <Link to="./" className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <Link to="inspiration" className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Home
                                     </Link>
-                                    <div className="mega_menu_inner">
+                                    {/* <div className="mega_menu_inner">
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
                                                 <ul className="dropdown-menu scroll">
@@ -195,39 +195,39 @@ class CustomNavbar extends Component {
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </li>
                                 
                                 <li className="dropdown submenu nav-item">
-                                    <Link to="./" title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service</Link>
+                                    <Link to="./" title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The Goal</Link>
                                     <ul role="menu" className=" dropdown-menu">
-                                        <li className="nav-item"><NavLink exact title="Service" className="nav-link" to='/Service'>Service</NavLink></li>
-                                        <li className="nav-item"><NavLink exact title="Service Details" className="nav-link" to='/ServiceDetails'>Service Details</NavLink></li>
+                                        {/* <li className="nav-item"><NavLink exact title="Service" className="nav-link" to='/Service'>Service</NavLink></li>
+                                        <li className="nav-item"><NavLink exact title="Service Details" className="nav-link" to='/ServiceDetails'>Service Details</NavLink></li> */}
                                     </ul>
                                 </li>
                                 <li className="dropdown submenu nav-item">
-                                    <Link to="./" title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</Link>
-                                    <ul role="menu" className=" dropdown-menu">
-                                        <li className="nav-item"><NavLink exact title="About" className="nav-link" to='/About'>About</NavLink></li>
+                                    <Link to="./" title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features</Link>
+                                    {/* <ul role="menu" className=" dropdown-menu">
+                                        <li className="nav-item"><NavLink exact title="About" className="nav-link" to='/About'>Subscribe</NavLink></li>
                                         <li className="nav-item"><NavLink exact title="Process" className="nav-link" to='/Process'>Process</NavLink></li>
                                         <li className="nav-item"><NavLink exact title="Team" className="nav-link" to='/Team'>Team</NavLink></li>
                                         <li className="nav-item"><NavLink exact title="Price" className="nav-link" to='/Price'>Price</NavLink></li>
                                         <li className="nav-item"><NavLink exact title="Faq" className="nav-link" to='/Faq'>Faq</NavLink></li>
                                         <li className="nav-item"><NavLink exact title="SignIn" className="nav-link" to='/SignIn'>Sign In</NavLink></li>
                                         <li className="nav-item"><NavLink exact title="SignUp" className="nav-link" to='/SignUp'>Sign Up</NavLink></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
-                                <li className="dropdown submenu nav-item"><Link title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Portfolio</Link>
-                                    <ul role="menu" className=" dropdown-menu">
+                                <li className="dropdown submenu nav-item"><Link title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Subscrbe</Link>
+                                    {/* <ul role="menu" className=" dropdown-menu">
                                         <li className="nav-item"><NavLink title="Portfolio 2" className="nav-link" to='/Portfolio-2col'>Portfolio 2col</NavLink></li>
                                         <li className="nav-item"><NavLink title="Portfolio 3" className="nav-link" to='/Portfolio-3col'>Portfolio 3col</NavLink></li>
                                         <li className="nav-item"><NavLink title="Portfolio Fullwidth" className="nav-link" to='/Portfolio-fullwidth-4col'>Portfolio fullwidth</NavLink></li>
                                         <li className="nav-item"><NavLink title="PortfolioSingle" className="nav-link" to='/PortfolioSingle'>Portfolio Single</NavLink></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li className="nav-item dropdown submenu">
                                     <a className="nav-link dropdown-toggle" href=".#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Blog
+                                        Our Stories
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li className="nav-item"><NavLink to="/Bloglist" className="nav-link">Blog List</NavLink></li>

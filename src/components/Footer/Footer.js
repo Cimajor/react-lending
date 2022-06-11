@@ -1,6 +1,7 @@
 import React , {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Reveal from 'react-reveal/Reveal'
+import Mailchimp from 'react-mailchimp-form'
 class Footer extends Component {
     render(){
         let FooterData = this.props.FooterData;
@@ -17,12 +18,25 @@ class Footer extends Component {
                                                 <div className="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s">
                                                     <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
                                                     <p>{widget.description}</p>
-                                                    <form action="#" className="f_subscribe_two mailchimp" method="post">
+                                                    {/* <form action="#" className="f_subscribe_two mailchimp" method="post">
                                                         <input type="text" name="EMAIL" className="form-control memail" placeholder="Email"/>
                                                         <button className="btn btn_get btn_get_two" type="submit">Subscribe</button>
                                                         <p className="mchimp-errmessage" style={{display: "none"}}></p>
                                                         <p className="mchimp-sucmessage" style={{display: "none"}}></p>
-                                                    </form>
+                                                    </form> */}
+                    <Mailchimp
+                    action="https://gmail.us17.list-manage.com/subscribe/post?u=9008ba6ddb844a5084f6e1d7e&amp;id=29ad4515c9"
+                    fields={[
+                    {
+                        name: 'EMAIL',
+                        placeholder: 'Email',
+                        type: 'email',
+                        required: true
+                    }
+
+                    ]}
+                    className='subscription-form'
+                    />  
                                                 </div>
                                             </div>
                                         </Reveal>
