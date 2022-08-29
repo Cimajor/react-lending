@@ -38,8 +38,8 @@ class Testimonial extends Component {
                             <div className="testimonial_title">
                                 <Fade bottom cascade>
                                     <div className="seo_sec_title wow fadeInUp" data-wow-delay="0.3s">
-                                        <h2>Our value for you</h2>
-                                        <p>Change your profetion is a very complex and scary way. Not everyone can pass it without clear view of the road. I'm going to show you the way.</p>
+                                        <h2>Our value</h2>
+                                        <p>Change your profetion is a very complex and scary way. Not everyone can pass it without clear view of impending journey. I'm going to show you the way.</p>
                                     </div>
                                 </Fade>
                                 <div className="slider_nav">
