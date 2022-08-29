@@ -8,7 +8,7 @@ const Service = () => {
         <React.Fragment>
             <section id="inspiration" className="seo_service_area sec_pad">
                 <div className="container">
-                    <SeoTitle Title='The Goal' TitleP='Using open data and AI, schoolless analyzes all industries. It helps many people develop a new skill set to learn a new profession or grow in their current job, by suggesting the right skills to learn or develop. I will save valuable time thanks to a dedicated, tailor-made learning plan, so that you will never learn a skill that you will not use in your job!'/>
+                    <SeoTitle Title='The Goal' TitleP='Using open data and AI, schoolless analyzes all industries. It helps many people develop a new skill set to learn a new profession or grow in their current job by suggesting the right skills to learn or develop. In addition, you will save valuable time thanks to a dedicated, tailor-made learning plan. It will help you to avoid learning skills you will not use in your job!'/>
                     <div className="row seo_service_info">
                         {/* <Fade bottom duration={500}>
                             <div className="col-lg-4 col-md-6">
@@ -68,41 +68,41 @@ const Service = () => {
                 </div>
             </div> */}
             </section>
-            <section className="seo_features_one sec_pad">
+            <section id="features" className="seo_features_one sec_pad">
                 <div className="container">
                     <div className="row flex-row-reverse">
                         <div className="col-lg-6">
                             <div className="seo_features_img">
                                 {/* <div className="round_circle"></div>
                                 <div className="round_circle two"></div> */}
-                                <img src={require('../../img/skills1.png')} alt=""/>
+                                <img src={require('../../img/skills_diagram.png')} alt=""/>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
-                                    <h2>Artificial Intelligence will help you shape your skills to achive your goals</h2>
-                                    <p>With AI, we Analyze thousands of open profiles working in your industry and generate nodes of usefull skills to learn</p>
+                                    <h2>Artificial Intelligence will help you shape your skills to achieve your goals</h2>
+                                    <p>With AI, we Analyze thousands of open profiles working in your industry and generate nodes of useful skills to learn</p>
                                     <h4>Such structure will let you:</h4>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/seo/icon4.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Quickly enter to any profession</h3>
-                                            <p>You will be able to see necessary skills in chosen profession</p>
+                                            <h3>Quickly enter any profession</h3>
+                                            <p>You will be able to see the necessary skills in your chosen profession</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon two"><img src={require('../../img/seo/icon3.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>Skills you need to learn to grow up</h3>
-                                            <p>Find out skills help you to progress in your work</p>
+                                            <p>Find out skills that help you to progress in your work</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon three"><img src={require('../../img/seo/icon2.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>Quick switch to another profession with better conditions</h3>
-                                            <p>Explore which professions require a similar set of skills you have, and which of these professions are most interesting for you.</p>
+                                            <p>Explore which professions require a similar set of skills you have and which of these professions are most interesting for you.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -124,26 +124,28 @@ const Service = () => {
                         <div className="col-lg-6 d-flex align-items-center">
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
-                                    <h2 className="wow fadeInUp">Check out our dashboard to find all information about your dream job</h2>
+                                    <h2 className="wow fadeInUp">Check out our dashboard to find all information about your dream job.</h2>
                                     {/* <h6 className="wow fadeInUp">Based on anilized open data from different resources we are going to centralize all professional markets related information in one place:</h6> */}
-                                    <p className="wow fadeInUp">We collect and analyze all related information about professional markets in one place</p>
+                                    <p className="wow fadeInUp">We collect and analyze all related information about professional markets in one place.</p>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/pos/icon2.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Is profession in high demand?</h3>
-                                            <p>Check the trends and demand in the global career market</p>
+                                            <h3>Is the profession in high demand?</h3>
+                                            <p>Check the trends and demand in the global career market.</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/seo/icon4.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>How fast will your salary grow?</h3>
+                                            <p>Set your salary expectations right! You can see visualized average salaries depending on region and years of experience</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/pos/statistics.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Is your salary matching your skills and experience?</h3>
+                                            <h3>Is my salary matching my skills and experience?</h3>
+                                            <p>On Dashboard, You can compare your salary to the average salary of other specialists with the same years of experience.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,20 +168,20 @@ const Service = () => {
                         <div className="col-lg-6">
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
-                                    <h2>Schooless will help you to find the best way to learn needed skills</h2>
-                                    <p>User can find the most suitable way to explore needed skills</p>
+                                    <h2>On Schoolless, You can share your preferable way to learn skills or find & follow someone's path</h2>
+                                    <p>Find the most suitable way to explore needed skills.</p>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/seo/icon4.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>All education sources splited by types</h3>
-                                            <p>User is able to find the most sutable way to learn skill. It can be book, online course or ofline lessons in your regein.</p>
+                                            <h3>All education sources are splited by types</h3>
+                                            <p>Find the most suitable way to learn in the education section! It can be a book, online course, offline lessons in your region, or anything else, explore!</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon two"><img src={require('../../img/seo/icon3.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>All courses will have list of covered skill</h3>
-                                            <p>User can select best source of education wich perfectly cover only needed skills</p>
+                                            <h3>All courses will have a list of covered skill</h3>
+                                            <p>Every source contains a list of covered skills. Keep focus and select the source that matches the skills you are looking for the best.</p>
                                         </div>
                                     </div>
                                 </div>

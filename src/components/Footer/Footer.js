@@ -6,7 +6,7 @@ class Footer extends Component {
     render(){
         let FooterData = this.props.FooterData;
         return(
-            <footer className="new_footer_area bg_color">
+            <footer className="new_footer_area bg_color" id="contact-us">
                 <div className="new_footer_top">
                     <div className="container">
                         <div className="row">
@@ -102,7 +102,7 @@ class Footer extends Component {
                                 <p className="mb-0 f_400">{FooterData.copywrite}</p>
                             </div>
                             <div className="col-lg-6 col-sm-5 text-right">
-                                <p>Made with <i className="icon_heart"></i> in <a href="/#">DroitThemes</a></p>
+                                <p>Made with <i className="icon_heart"></i> <a href="/#">from Ukraine</a></p>
                             </div>
                         </div>
                     </div>

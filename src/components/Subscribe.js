@@ -58,7 +58,7 @@ const Subscribe = (props) => {
                     <div className="overlay_img"></div>
                     <div className="cloud_img"><img src={require('../img/seo/cloud.png')} alt=""/></div>
                     <div className="container">
-                        <SeoTitle Title="Contact Us" TitleP="Please leave your contacts us, and we will contact you back as fast as possible"/>
+                        <SeoTitle Title="Ask Question" TitleP="Please leave your question, and we will contact you as quickly as possible."/>
                         <form action="#" onSubmit={sendQuestion} className="row seo_subscribe_form">
                             <div className="input-group col-lg-5 col-md-5 col-sm-6">
                                 <input type="text" onChange={evt => setQuestionText(evt.target.value)} name="website" id="website" placeholder="Question" className="form-control"/>
@@ -72,12 +72,12 @@ const Subscribe = (props) => {
                         </form>
                     </div>
                 </section>
-                <section className="case_studies_area sec_pad">
+                {/* <section className="case_studies_area sec_pad">
                     <div className="container">
                         <SeoTitle Title="Our case studies" TitleP="The full monty burke posh excuse my French Richard cheeky bobby spiffing crikey Why gormless, pear shaped.!"/>
                         <StudySlider/>
                     </div>
-                </section>
+                </section> */}
                 {/* <section className="seo_fact_area sec_pad">
                     <div className="home_bubble">
                         <div className="bubble b_one"></div>
@@ -117,14 +117,14 @@ const Subscribe = (props) => {
                     </div>
                 </section> */}
                 <Testimonial tClass="testimonial_area sec_pad" FooterData={FooterData}/>
-                <section className="seo_call_to_action_area sec_pad">
+                {/* <section className="seo_call_to_action_area sec_pad">
                     <div className="container">
                         <div className="seo_call_action_text">
                             <h2>Ready to get started?<br/> lt's fast, free and very easy!</h2>
                             <a href="/" className="about_btn">Get a free Estimate</a>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </React.Fragment>
         )
 }

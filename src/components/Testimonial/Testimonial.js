@@ -28,15 +28,18 @@ class Testimonial extends Component {
         let FooterData = this.props.FooterData;
         var {tClass}= this.props;
         return(
-            <section className={`${tClass}`}>
+            // <div>
+                
+            // </div>
+            <section className={`${tClass}`} id="value">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 d-flex align-items-center">
                             <div className="testimonial_title">
                                 <Fade bottom cascade>
                                     <div className="seo_sec_title wow fadeInUp" data-wow-delay="0.3s">
-                                        <h2>Check testimonials for<br/> our satisfied clients</h2>
-                                        <p>That ummm I'm telling Why say bleeder smashing lemon squeezy tosser, cheesed off dropped.!</p>
+                                        <h2>Our value for you</h2>
+                                        <p>Change your profetion is a very complex and scary way. Not everyone can pass it without clear view of the road. I'm going to show you the way.</p>
                                     </div>
                                 </Fade>
                                 <div className="slider_nav">
@@ -55,8 +58,8 @@ class Testimonial extends Component {
                                                     <div className="author_img">
                                                         <img src={require ("../../img/" + item.image)} alt=""/>
                                                     </div>
+                                                    <h3>{item.authorName}</h3>
                                                     <p>{item.description}</p>
-                                                    <h5>{item.authorName}</h5>
                                                     <h6>{item.authorPost}</h6>
                                                 </div>
                                             )

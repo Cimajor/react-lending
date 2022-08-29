@@ -15,14 +15,14 @@ const DesignBanner = () => {
                 <div className="triangle b_eight" data-parallax='{"x": 120, "y": -10}'><img src={require('../../img/seo/triangle_two.png')} alt=""/></div>
                 <div className="triangle b_nine"><img src={require('../../img/seo/triangle_three.png')} alt=""/></div>
             </div>
-            <div className="banner_top">
+            <div id="home" className="banner_top">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center seo_banner_content">
-                            <Reveal effect="fadeInUp" duration={500}><h2>Anyone can be anythin</h2></Reveal>
-                            <Reveal effect="fadeInUp" duration={1000}><p className="wow fadeInUp" data-wow-delay="0.5s">Schoolless helps you to master a new profession or exelent in your current job<br/></p></Reveal>
-                            <Reveal effect="fadeInLeft" duration={1200}><a href="./" className="seo_btn seo_btn_one btn_hover wow fadeInLeft">Get Started</a></Reveal>
-                            <Reveal effect="fadeInLeft" duration={1200}><a href="./" className="seo_btn seo_btn_two btn_hover wow fadeInRight">Learn More</a></Reveal>
+                            <Reveal effect="fadeInUp" duration={500}><h2>Anyone can be anything</h2></Reveal>
+                            <Reveal effect="fadeInUp" duration={1000}><p className="wow fadeInUp" data-wow-delay="0.5s">Schoolless helps you to master a new profession or excel in your current job<br/></p></Reveal>
+                            {/* <Reveal effect="fadeInLeft" duration={1200}><a href="./" className="seo_btn seo_btn_one btn_hover wow fadeInLeft">Get Started</a></Reveal>
+                            <Reveal effect="fadeInLeft" duration={1200}><a href="./" className="seo_btn seo_btn_two btn_hover wow fadeInRight">Learn More</a></Reveal> */}
                         </div>
                     </div>
                     <div className="saas_home_img">
