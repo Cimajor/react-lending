@@ -1,5 +1,6 @@
 import React from 'react';
 import Reveal from 'react-reveal/Reveal/';
+import Video from '../../components/Video';
 
 const DesignBanner = () => {
     return(
@@ -26,7 +27,9 @@ const DesignBanner = () => {
                         </div>
                     </div>
                     <div className="saas_home_img">
-                        <Reveal effect="fadeInUp" duration={1400}><img src={require('../../img/seo/image.png')} alt=""/></Reveal>
+                        {/* <Reveal effect="fadeInUp" duration={1400}><img src={require('../../img/seo/image.png')} alt=""/></Reveal> */}
+
+                        <Video/>
                     </div>
                 </div>
             </div>

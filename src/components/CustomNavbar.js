@@ -38,15 +38,15 @@ class CustomNavbar extends Component {
                                 <li className="dropdown submenu nav-item">
                                     <NavHashLink smooth={true} to="#features" title="Pages" className="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Features</NavHashLink>
                                 </li>
-                                <li className="dropdown submenu nav-item">
-                                    <NavHashLink smooth={true} to="#contact-us" title="Pages" className="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</NavHashLink>
-                                </li>
                                 <li className="nav-item dropdown submenu">
                                     <NavHashLink smooth={true} to="#value" title="Pages" className="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Our Value</NavHashLink>
                                 </li>
-                                <li className="nav-item"><NavLink title="Pricing" className="nav-link" to="">Contact</NavLink></li>
+                                <li className="dropdown submenu nav-item">
+                                    <NavHashLink smooth={true} to="#contact-us" title="Pages" className="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</NavHashLink>
+                                </li>
+                                {/* <li className="nav-item"><NavLink title="Pricing" className="nav-link" to="">Contact</NavLink></li> */}
                             </ul>
-                            <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">Subscribe</a>
+                            {/* <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">Subscribe</a> */}
                         </div>
                     </div>
                 </nav>
