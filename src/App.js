@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 /*------ Pages-----*/
 import { Home } from "./Pages/Home";
@@ -37,13 +37,28 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import BlogGridPage from "./Pages/BlogGridPage";
 import NotFound from "./Pages/404";
+import ReactGA from "react-ga4";
+import CookieConsent from 'react-cookie-consent';
+
 
 class App extends Component {
+
   componentDidMount() {
     this.props.hideLoader();
   }
+
   render() {
+    const TRACKING_ID = "G-PWE5YBSP77"; // OUR_TRACKING_ID
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.send("pageview");
+
     return (
+      <>
+            <CookieConsent
+            location="bottom"
+            expires={150}>
+            At Scholless, we are committed to protecting the privacy of our users. We use the personal data we collect to provide and improve our services. By using our site, you agree to the collection, use, and sharing of your personal data as described in our Privacy Policy. If you have any questions or concerns about our privacy practices, please don't hesitate to contact us.
+      </CookieConsent>
       <Router>
         <Switch>
           <ScrollToTopRoute exact={true} path={"/"} component={Home} />
@@ -101,6 +116,7 @@ class App extends Component {
           <ScrollToTopRoute component={NotFound} />
         </Switch>
       </Router>
+      </>
     );
   }
 }

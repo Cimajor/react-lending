@@ -29,11 +29,10 @@ class Footer extends Component {
                     fields={[
                     {
                         name: 'EMAIL',
-                        placeholder: 'Email',
+                        placeholder: 'Your Email',
                         type: 'email',
                         required: true
                     }
-
                     ]}
                     className='subscription-form'
                     />  
@@ -43,7 +42,7 @@ class Footer extends Component {
                                     )
                                 })
                             }
-                            {
+                            {/* {
                                 FooterData.AboutWidget.map(widget=>{
                                     return(
                                         <Reveal effect="fadeInLeft" duration={500} key={widget.id}>
@@ -64,19 +63,24 @@ class Footer extends Component {
                                         </Reveal>
                                     )
                                 })
-                            }
+                            } */}
                             {
                                 FooterData.SocialLinks.map(widget=>{
                                     return(
+                                        <>
                                         <Reveal effect="fadeInLeft" duration={500} key={widget.id}>
                                         <div className="col-lg-3 col-md-6">
                                             <div className="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s">
+
                                                 <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
                                                 <div className="f_social_icon">
                                                     {
                                                         widget.menuItems.map(item =>{
                                                             return(
-                                                                <Link to="/" key={item.id}><i className={item.icon}></i></Link>
+                                                                <a href={item.url} key={item.id}> 
+                                                                    <i className={item.icon}>
+                                                                    </i>
+                                                                </a>
                                                             )
                                                         })
                                                     }
@@ -84,6 +88,7 @@ class Footer extends Component {
                                             </div>
                                         </div>
                                         </Reveal>
+                                        </>
                                     )
                                 })
                             }

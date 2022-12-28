@@ -102,7 +102,7 @@ const Service = () => {
                                         <div className="icon three"><img src={require('../../img/seo/icon2.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>Quick switch to another profession with better conditions</h3>
-                                            <p>Explore which professions require a similar set of skills you have and which of these professions are most interesting for you.</p>
+                                            <p>Explore which professions require a similar set of skills you have and which of these professions are most interesting for you</p>
                                         </div>
                                     </div>
                                 </div>
@@ -124,14 +124,14 @@ const Service = () => {
                         <div className="col-lg-6 d-flex align-items-center">
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
-                                    <h2 className="wow fadeInUp">Check out our dashboard to find all information about your dream job.</h2>
+                                    <h2 className="wow fadeInUp">Check out our dashboard to find all information about your dream job</h2>
                                     {/* <h6 className="wow fadeInUp">Based on anilized open data from different resources we are going to centralize all professional markets related information in one place:</h6> */}
-                                    <p className="wow fadeInUp">We collect and analyze all related information about professional markets in one place.</p>
+                                    <p className="wow fadeInUp">We collect and analyze all related information about professional markets in one place</p>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/pos/icon2.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>Is the profession in high demand?</h3>
-                                            <p>Check the trends and demand in the global career market.</p>
+                                            <p>Check the trends and demand in the global career market</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
@@ -145,7 +145,7 @@ const Service = () => {
                                         <div className="icon"><img src={require('../../img/pos/statistics.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>Is my salary matching my skills and experience?</h3>
-                                            <p>On Dashboard, You can compare your salary to the average salary of other specialists with the same years of experience.</p>
+                                            <p>On Dashboard, You can compare your salary to the average salary of other specialists with the same years of experience</p>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@ const Service = () => {
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
                                     <h2>On Schoolless, You can share your preferable way to learn skills or find & follow someone's path</h2>
-                                    <p>Find the most suitable way to explore needed skills.</p>
+                                    <p>Find the most suitable way to explore needed skills</p>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/seo/icon4.png')} alt=""/></div>
                                         <div className="media-body">
@@ -181,7 +181,7 @@ const Service = () => {
                                         <div className="icon two"><img src={require('../../img/seo/icon3.png')} alt=""/></div>
                                         <div className="media-body">
                                             <h3>All courses will have a list of covered skill</h3>
-                                            <p>Every source contains a list of covered skills. Keep focus and select the source that matches the skills you are looking for the best.</p>
+                                            <p>Every source contains a list of covered skills. Keep focus and select the source that matches the skills you are looking for the best</p>
                                         </div>
                                     </div>
                                 </div>

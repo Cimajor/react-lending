@@ -3,7 +3,7 @@ const FooterData = {
         {
             id: 1,
             title: "Get In Touch",
-            description: "Don’t miss any updates on our new templates and extensions!",
+            description: "Don’t miss any updates!",
         }
     ],
     AboutWidget: [
@@ -115,24 +115,24 @@ const FooterData = {
             menuItems: [
                 {
                   id: 1,
-                  url: '#',
+                  url: 'https://www.facebook.com/profile.php?id=100088781270588',
                   icon: 'ti-facebook',
                 },
                 {
                   id: 2,
-                  url: '#',
-                  icon: 'ti-twitter-alt',
+                  url: 'https://www.linkedin.com/company/schoolless',
+                  icon: 'ti-linkedin',
                 },
                 {
                   id: 3,
-                  url: '#',
-                  icon: 'ti-vimeo-alt',
+                  url: 'https://twitter.com/schoolless_team',
+                  icon: 'ti-twitter',
                 },
-                {
-                  id: 4,
-                  url: '#',
-                  icon: 'ti-pinterest',
-                }
+                // {
+                //   id: 4,
+                //   url: '#',
+                //   icon: 'ti-instagram',
+                // }
             ]
         }
     ],

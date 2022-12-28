@@ -4434,7 +4434,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-bottom: -140px;
 }
 
-.seo_banner_content h2 {
+.seo_banner_content h1 {
   font-size: 60px;
   line-height: 80px;
   color: #263b5e;
@@ -12931,6 +12931,16 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin: 0 auto;
 }
 
+.seo_subscribe_form .sending {
+  color: white;
+  margin-left: 30px;
+}
+
+.seo_subscribe_form .sent {
+  color: white;
+  margin-left: 30px;
+}
+
 .seo_subscribe_form .input-group {
   padding: 0px 10px;
 }
@@ -12951,7 +12961,7 @@ color: #666666;
 
 .seo_subscribe_form .input-group .form-control {
   max-width: 400px;
-  color: #949db5;
+  color: black;
   background: #fff;
   border: 0px;
   -webkit-box-shadow: none;

@@ -17,6 +17,7 @@ import "./assets/responsive.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "popper.js";
 
+
 const loader = document.querySelector("#preloader");
 
 // if you want to show the loader when React loads data again

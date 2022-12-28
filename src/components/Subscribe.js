@@ -8,9 +8,25 @@ import emailjs from '@emailjs/browser';
 const Subscribe = (props) => {
         let [questionTest, setQuestionText] = useState("")
         let [email, setQuestionEmail] = useState("")
+        let [sendingStatus, setSendingStatus] = useState("")
+
+        const displaySendingStatus = () => {
+            if(sendingStatus === "sending"){
+                return <div className='sending'>
+                    Sending...
+                </div>
+            }else if(sendingStatus === "") {
+                return ""
+            }else if(sendingStatus === "sent"){
+                return <div className='sent'>
+                Question has been sent
+            </div>
+            }
+        }
 
         const sendQuestion = (event) => {
             event.preventDefault();
+            setSendingStatus("sending")
             const contactParams = {
                 form_name: "Contacted",
                 form_email: email,
@@ -25,7 +41,7 @@ const Subscribe = (props) => {
                 accessToken: '1d90c0519421dc5eee2e1c539e9b5b0c'
             }
 
-            fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        fetch('https://api.emailjs.com/api/v1.0/email/send', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -35,7 +51,9 @@ const Subscribe = (props) => {
             body: JSON.stringify(data)
         })        
         .then((result) => {
-            console.log(result.statusText);
+            setQuestionText("")
+            setQuestionEmail("")
+            setSendingStatus("sent")
         }, (error) => {
             console.log(error.statusText);
         });
@@ -58,18 +76,28 @@ const Subscribe = (props) => {
                     <div className="overlay_img"></div>
                     <div className="cloud_img"><img src={require('../img/seo/cloud.png')} alt=""/></div>
                     <div className="container">
-                        <SeoTitle Title="Ask Question" TitleP="Please leave your question, and we will contact you as quickly as possible."/>
+                    {sendingStatus === "sent" ? 
+                        <SeoTitle Title="Question has been sent" TitleP="We appreciate your interest and will respond with an answer as soon as possible"/>
+                    
+                    : 
+                    <>
+
+                        <SeoTitle Title="Ask Question" TitleP="Please leave your question, and we will contact you as quickly as possible"/>
+
                         <form action="#" onSubmit={sendQuestion} className="row seo_subscribe_form">
                             <div className="input-group col-lg-5 col-md-5 col-sm-6">
-                                <input type="text" onChange={evt => setQuestionText(evt.target.value)} name="website" id="website" placeholder="Question" className="form-control"/>
+                                <input type="text" value={questionTest} onChange={evt => setQuestionText(evt.target.value)} name="website" id="website" placeholder="Question" className="form-control"/>
                             </div>
                             <div className="input-group col-lg-5 col-md-4 col-sm-6">
-                                <input type="email" onChange={evt => setQuestionEmail(evt.target.value)} name="email" id="emails" placeholder="Email" className="form-control"/>
+                                <input type="email" value={email} onChange={evt => setQuestionEmail(evt.target.value)} name="email" id="emails" placeholder="Your Email" className="form-control"/>
                             </div>
                             <div className="input-group col-lg-2 col-md-3 col-sm-12">
                                 <input type="submit" disabled={(email.length === 0 || questionTest.length === 0)} name="submit" value="Check" className="check-btn"/>
                             </div>
+                            {displaySendingStatus()}
                         </form>
+                        </>
+                    }
                     </div>
                 </section>
                 {/* <section className="case_studies_area sec_pad">

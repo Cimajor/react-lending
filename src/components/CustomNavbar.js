@@ -42,7 +42,7 @@ class CustomNavbar extends Component {
                                     <NavHashLink smooth={true} to="#value" title="Pages" className="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Our Value</NavHashLink>
                                 </li>
                                 <li className="dropdown submenu nav-item">
-                                    <NavHashLink smooth={true} to="#contact-us" title="Pages" className="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</NavHashLink>
+                                    <NavHashLink smooth={true} to="#contact-us" title="Pages" className="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Subscribe</NavHashLink>
                                 </li>
                                 {/* <li className="nav-item"><NavLink title="Pricing" className="nav-link" to="">Contact</NavLink></li> */}
                             </ul>
